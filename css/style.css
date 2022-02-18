@@ -1,0 +1,86 @@
+/* css code by Kaloyan KRASTEV */
+/* kaloyansen@gmail.com */
+@import
+url('https://fonts.googleapis.com/css?family=Outfit&display=swap');
+
+@
+keyframes slide {from { transform:translateX(-100vh)translateY(-100vw);
+	                opacity: 0;
+                      }
+
+                 to {
+	             transform: translateX(0) translateY(0);
+	             opacity: 1;
+                 }
+
+                }
+@
+keyframes slidex {from { transform:translateX(100vh)translateY(-100vw);
+	                 opacity: 0;
+                       }
+
+                  to {
+	              transform: translateX(0) translateY(0);
+	              opacity: 1;
+                  }
+
+                 }
+html {
+    height: 100%;
+    background-color: black;
+}
+
+#root {
+    position: relative;
+    height: 100%;
+    background-color: black;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#ecran {
+    position: absolute;
+    overflow: hidden;
+    overflow: visible;
+    background-color: #7799aa;
+    border-radius: 0;
+    border: 5px dotted blue;
+    /*animation: slide 0.333s;*/
+}
+
+#pause, #reload {
+    position: absolute;
+    color: red;
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+[id^="ball"] {
+    position: absolute;
+    border-radius: 100%;
+    border: 5px dotted black;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-width: bold;
+    /*    text-size: 40px;
+    width: 33px;
+    height: 33px;*/
+    /*animation: slidex 1s;*/
+}
+
+
+noscript {
+    display: block;
+    color: black;
+    background-color: red;
+    font-size: 15vw;
+    text-align: center;
+    margin: 5vw;
+    padding: 5vw;
+}
+
